@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tauri App</title>
+    <script type="module" src="/main.js" defer></script>
+    <style>
+      .logo.vanilla:hover {
+        filter: drop-shadow(0 0 2em #ffe21c);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+        <h1>Tic-Tac-Toe Bot</h1>
+      <table class="border-none" id="board">
+          <tr>
+            <td class="cell" id="cell-0"></td>
+            <td class="cell" id="cell-1"></td>
+            <td class="cell" id="cell-2"></td>
+          </tr>
+          <tr>
+            <td class="cell" id="cell-3"></td>
+            <td class="cell" id="cell-4"></td>
+            <td class="cell" id="cell-5"></td>
+          </tr>
+          <tr>
+            <td class="cell" id="cell-6"></td>
+            <td class="cell" id="cell-7"></td>
+            <td class="cell" id="cell-8"></td>
+          </tr>
+        </table>
+      <div id="result"></div>
+      <br>
+      <div id="buttons">
+        <button id="bot_start">Let Bot Start</button>
+        <button id="quit">Quit</button>
+        <button id="restart">Restart</button>
+      </div>
+      </div>
+  </body>
+</html>
