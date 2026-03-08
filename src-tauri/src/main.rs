@@ -113,7 +113,7 @@ fn is_game_over(board: [[i32; 3]; 3]) -> bool {
 
 fn main() {
     tauri::Builder::default()
-        .invoke_handler(tauri::generate_handler![is_game_over, evaluate, best_move, ])
+        .invoke_handler(tauri::generate_handler![is_game_over, evaluate, best_move])
         .run(tauri::generate_context!())
         .expect("error while running tauri application");
 }
